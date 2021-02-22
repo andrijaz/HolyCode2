@@ -27,7 +27,7 @@ npm start
 ![edited](https://github.com/andrijaz/HolyCode2/blob/main/screenshots/editor%20edited%20page.png)
 
 ### editor not edited articles
-[!notedited](https://github.com/andrijaz/HolyCode2/blob/main/screenshots/editor%20not%20edited%20page.png)
+![notedited](https://github.com/andrijaz/HolyCode2/blob/main/screenshots/editor%20not%20edited%20page.png)
 
 ### stats page
-[!stats](https://github.com/andrijaz/HolyCode2/blob/main/screenshots/stats%20page.png)
+![stats](https://github.com/andrijaz/HolyCode2/blob/main/screenshots/stats%20page.png)
