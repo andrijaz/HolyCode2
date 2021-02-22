@@ -1,0 +1,44 @@
+version: "3"
+
+services:
+  server:
+    container_name: backend
+    build: .
+    command: python manage.py runserver 0.0.0.0:8000
+    volumes:
+      - .:/code
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    depends_on:
+      - db
+      - redis
+  #      - client
+
+
+  db:
+    container_name: database
+    image: postgres
+    environment:
+      - POSTGRES_DB=postgres
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+
+#  client:
+#    container_name: frontend
+#    stdin_open: true
+#    build:
+#      context: frontend/front/.
+#
+#    ports:
+#      - "3000:3000"
+#    volumes:
+#      - "/app/node_modules"
+#      - "./:/app"
+
+  redis:
+    container_name: redis
+    image: "redis:alpine"
+    ports:
+    - 6379:6379
